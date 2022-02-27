@@ -8,7 +8,7 @@ import { Box, Heading, Slider, SliderTrack, SliderMark, SliderFilledTrack, Slide
 import { deleteScreen, listScreens } from '../../Actions/screenActions';
 import { deleteChannel, listChannels } from '../../Actions/channelActions';
 import { deleteShop, listShops } from '../../Actions/shopActions';
-import { createWallet, editWallet, listWallets } from '../../Actions/walletActions'
+import { createWallet, editWallet, getWalletDetails, listWallets } from '../../Actions/walletActions'
 
 // import Rating from '../Components/Helpers/Rating';
 import LoadingBox from '../../components/helpers/LoadingBox';
@@ -184,6 +184,7 @@ export function UserProfile(props: any) {
       dispatch(listChannels({ ally: allyMode ? userInfo._id : '' }));
       // dispatch(listShops({ brand: brandMode ? userInfo._id : '' }));
       dispatch(listWallets());
+      dispatch(getWalletDetails(userInfo.defaultWallet))
   }, [
     dispatch, 
     userInfo, 
