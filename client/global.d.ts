@@ -3,5 +3,3 @@ export declare global {
     ethereum: any;
   }
 }
-
-declare module 'react-router-dom';

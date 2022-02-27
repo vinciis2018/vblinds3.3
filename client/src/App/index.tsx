@@ -1,5 +1,5 @@
 import { HashRouter, BrowserRouter, Route } from "react-router-dom";
-import { ReactQueryDevtools } from "react-query/devtools";
+// import { ReactQueryDevtools } from "react-query/devtools";
 // routes
 import { Routes } from "routes";
 // providers
@@ -34,7 +34,7 @@ export const App = () => {
               </QueryParamProvider>
             </RouterWrapper>
           </FinnieProvider>
-          <ReactQueryDevtools initialIsOpen={true} />
+          {/* <ReactQueryDevtools initialIsOpen={true} /> */}
         </QueryClientProvider>
       </ChakraProvider>
     </>
