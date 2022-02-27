@@ -17,7 +17,7 @@ import "@fontsource/montserrat";
 const queryClient = new QueryClient();
 
 export const App = () => {
-  const RouterWrapper = (process.env.NODE_ENV !== "production" ? BrowserRouter : HashRouter) as React.ElementType;
+  const RouterWrapper = ( BrowserRouter ) as React.ElementType;
   return (
     <>
       <SEO />
