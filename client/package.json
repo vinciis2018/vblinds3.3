@@ -1,7 +1,6 @@
 {
   "name": "blinds_by_vinciis",
   "version": "0.1.0",
-  "homepage": ".",
   "proxy": "http://localhost:3333/",
   "private": true,
   "license": "",
