@@ -18,7 +18,7 @@ function EmptyLayout({ children }: Props) {
 const PublicRoute: React.FC<PublicRouteProps> = ({ component: Component, layout: Layout = EmptyLayout, ...rest }) => (
   <Route
     {...rest}
-    render={props => {
+    render={(props: any) => {
       return (
         <Layout {...props}>
           <Component {...props} />

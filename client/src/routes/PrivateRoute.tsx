@@ -17,7 +17,7 @@ export default function PrivateRoute({component: Component, layout: Layout = Emp
   return (
     <Route 
       {...rest} 
-      render={(props) => 
+      render={(props: any) => 
         userInfo ? ( 
           <Layout {...props}>
             <Component {...props}></Component>

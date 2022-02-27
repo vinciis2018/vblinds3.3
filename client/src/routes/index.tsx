@@ -1,4 +1,4 @@
-import { Switch } from "react-router-dom";
+import {Switch} from "react-router-dom";
 import PublicRoute from "./PublicRoute";
 import PrivateRoute from "./PrivateRoute";
 // pages
