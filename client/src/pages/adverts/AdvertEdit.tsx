@@ -878,7 +878,7 @@ export function AdvertEdit(props: any) {
                       <Heading fontSize="">slotDetails</Heading>
                       <Text fontSize="">{new Date(slot.date).toLocaleString()} </Text>
                       {slot.slotsBooked.filter((slotbooked: any) => (slotbooked.campaignDetails === video._id)) ? (
-                        <Text fontSize="">{slot.slotsBooked.filter((slotbooked: any) => (slotbooked.campaignDetails === video._id))[0].numberOfSlots} <strong> Random</strong></Text>
+                        <Text fontSize="">{slot.slotsBooked.filter((slotbooked: any) => (slotbooked?.campaignDetails === video._id))[0]?.numberOfSlots} <strong> Random</strong></Text>
                       ) : (
                         <Text fontSize="">No Advert found</Text>
                       )}
@@ -892,7 +892,7 @@ export function AdvertEdit(props: any) {
                       <Heading fontSize="">slotDetails</Heading>
                       <Text fontSize="">{new Date(slot.date).toLocaleString()} </Text>
                       {slot.slotsBooked.filter((slotbooked: any) => (slotbooked.campaignDetails === video._id)) ? (
-                        <Text fontSize="">{slot.slotsBooked.filter((slotbooked: any) => (slotbooked.campaignDetails === video._id))[0].numberOfSlots} <strong> Random</strong></Text>
+                        <Text fontSize="">{slot.slotsBooked.filter((slotbooked: any) => (slotbooked?.campaignDetails === video._id))[0]?.numberOfSlots} <strong> Random</strong></Text>
                       ) : (
                         <Text fontSize="">No Advert found</Text>
                       )}
